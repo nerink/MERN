@@ -1,4 +1,3 @@
-// requirements
 const { AuthenticationError } = require("apollo-server-express");
 const { User } = require("../models");
 const { signToken } = require("../utils/auth");
@@ -38,7 +37,7 @@ const resolvers = {
       if (!correctPw) {
         throw new AuthenticationError("Incorrect credentials");
       }
-      // sign JWT
+      // sign web token 
       const token = signToken(user);
       return { token, user };
     },
