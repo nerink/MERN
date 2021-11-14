@@ -6,6 +6,7 @@ This allows users to search for a book that they would like to read.
 - MongoDB
 - Mongoose
 - GraphQl
-
+## Mock-up
+![screenshot of application](./screenshot.png)
 ## License
 MIT licensed 
